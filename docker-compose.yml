@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  openstack:
+    image: openstack
+    env_file:
+      - .env
+    volumes:
+      - ./out:/out
